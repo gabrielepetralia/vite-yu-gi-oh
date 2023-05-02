@@ -13,20 +13,21 @@ export default {
 <template>
   <main>
     <div class="container">
-      
+      <select class="form-select">
+        <option value="alien">Alien</option>
+      </select>
     </div>
   </main>
 </template>
 
 <style lang='scss' scoped>
   main {
-    min-height: 800px;
     background-color : #d48f38;
     padding : 40px 0;
 
-    .container {
-      height: 500px;
-      background-color: white;
+    select {
+      width: 200px;
+      margin-bottom : 40px;
     }
   }
 </style>
