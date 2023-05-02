@@ -5,7 +5,7 @@ export default {
   name : "Main",
 
   components : {
-    CardsContainer
+    CardsContainer,
   }
 }
 </script>

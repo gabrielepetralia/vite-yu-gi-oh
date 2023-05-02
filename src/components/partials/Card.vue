@@ -3,7 +3,7 @@ export default {
   name : "Card",
 
   props : {
-    gameCard : Object
+    gameCard : Object,
   }
 }
 </script>
@@ -26,7 +26,6 @@ export default {
 <style lang="scss" scoped>
   .gp-card {
     background-color : #d48f38;
-    border : 3px solid black;
 
     .gp-card-text {
       min-height: 150px;

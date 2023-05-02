@@ -9,7 +9,7 @@ export default {
 
   components : {
     Header,
-    Main
+    Main,
   },
 
   data() {
