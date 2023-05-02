@@ -2,6 +2,7 @@
 import axios from 'axios'
 import Header from "./components/Header.vue"
 import Main from "./components/Main.vue"
+import { store } from "./data/store"
 
 export default {
   name : 'App',
@@ -9,6 +10,20 @@ export default {
   components : {
     Header,
     Main
+  },
+
+  methods : {
+    getApi() {
+      axios.get(store.apiUrl)
+      .then(res => {
+        store.apiRes = res.data;
+        console.log(store.apiRes);
+      })
+    }
+  },
+
+  mounted() {
+    this.getApi();
   }
 }
 </script>
