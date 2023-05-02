@@ -1,6 +1,6 @@
 <script>
 export default {
-  name : 'Header',
+  name : "Header",
 
   data() {
     return {
@@ -28,7 +28,7 @@ export default {
   </header>
 </template>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
   header {
     background-color : white;
     padding : 20px 0;
