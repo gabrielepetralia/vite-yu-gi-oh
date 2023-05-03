@@ -7,3 +7,5 @@ Al caricamento della pagina, effettuare una chiama ajax all’API di Vite Yu-Gi-
 Creare un componente che mostri il numero totale di risultati ottenuti.
 
 Aggiungere la paginazione next/prev dal footer.
+
+Inserire ricerca per "type".

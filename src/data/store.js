@@ -5,4 +5,6 @@ export const store = reactive ({
   apiRes : [],
   cardNumber : 15,
   cardOffset : 0,
+  listType : [],
+  typeToSearch : null,
 })

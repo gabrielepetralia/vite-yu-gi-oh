@@ -26,23 +26,34 @@ export default {
         params : {
           num : store.cardNumber,
           offset : store.cardOffset,
+          type : store.typeToSearch,
         }
       })
       .then(res => {
         store.apiRes = res.data.data;
+      })
+    },
+
+    getTypes() {
+      axios.get(store.apiUrl)
+      .then(res => {
+        res.data.data.forEach( card => {
+          if(!store.listType.includes(card.type)) store.listType.push(card.type)
+        })
       })
     }
   },
 
   mounted() {
     this.getApi();
+    this.getTypes()
   }
 }
 </script>
 
 <template>
   <Header/>
-  <Main/>
+  <Main @getApi="getApi"/>
   <Footer @changePage="getApi"/>
 </template>
 

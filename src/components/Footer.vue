@@ -19,7 +19,7 @@ export default {
 
 <template>
   <footer>
-    <div class="buttons-container d-flex justify-content-center my-2 py-3">
+    <div class="d-flex justify-content-center my-2 py-3">
       <button class="btn fw-medium text-white me-3" @click="nextPrev(-store.cardNumber)" v-if="store.cardOffset">Prev</button>
       <button class="btn fw-medium text-white" @click="nextPrev( store.cardNumber)">Next</button>
     </div>
