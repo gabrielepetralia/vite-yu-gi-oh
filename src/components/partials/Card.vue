@@ -30,5 +30,13 @@ export default {
     .gp-card-text {
       min-height: 150px;
     }
+
+    .gp-card-img {
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 12px 5px rgba(0,0,0,0.5);
+      }
+    }
   }
 </style>
