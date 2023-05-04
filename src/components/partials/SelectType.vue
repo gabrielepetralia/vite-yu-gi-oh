@@ -7,6 +7,7 @@ export default {
   data() {
     return {
       store,
+      all : null,
     }
   },
 }
@@ -15,11 +16,10 @@ export default {
 <template>
   <div class="d-flex align-items-center pb-4">
     <h6 class="text-white">Search by type :</h6>
-    <select v-model.trim="store.typeToSearch" class="form-select me-3">
+    <select v-model.trim="store.typeToSearch" class="form-select me-3" @change="$emit('filter')">
+      <option selected :value="all">Select type</option>
       <option v-for="Type in store.listType" :key="Type" :value="Type">{{ Type }}</option>
     </select>
-
-    <button class="btn fw-medium text-white me-3" @click="$emit('filter')">Search</button>
 
     <button class="btn fw-medium text-white" @click="$emit('reset')">Reset</button>
   </div>
